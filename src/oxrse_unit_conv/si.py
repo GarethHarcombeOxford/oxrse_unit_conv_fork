@@ -14,6 +14,7 @@ meter = classes.SIUnit("meter", "m")
 m = meter
 meter_sq = classes.SIUnit("meter_sq", "m", 2)
 m2 = meter_sq
+
 meter_cu = classes.SIUnit("meter_cu", "m", 3)
 m3 = meter_cu
 
