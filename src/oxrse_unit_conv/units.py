@@ -14,6 +14,8 @@ km = kilometer
 
 mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.344)
 
+lightyear = Unit(name='lightyear', abbr='ly', si=meter, to_si_fun=lambda n: n*9.4607305e15)
+
 # meter_sq
 
 # meter_cu
