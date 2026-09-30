@@ -1,0 +1,60 @@
+name: Request a new unit
+description: |
+  Contribute to the repository by requesting that a new unit gets added. 
+  
+  You will then go on to add this unit yourself.
+labels:
+  - unit
+  - tutorial
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Welcome!**
+        
+        This template will guide you through submitting a new issue and how to write the code to resolve it. First, we need a good, clear description of the issue you are raising. In this case, something like:
+        
+        The package should support sparkles (spk).
+        
+        We can also give a little more detail, which will help the repository maintainers decide how to prioritise the issue:
+        
+        Sparkles are a made-up unit of illumination. A sparkle is a common unit in the made-up field of illumoteknics, which is the study of the light produced by fireworks.
+        
+        **Below, we have some checkboxes that are *required* for issues of this type.**
+        Not all repositories have these (or even issue templates), but they are included here to help guide you through the process and give you an idea of what is expected behaviour on many mature repositories.
+
+  - type: input
+    attributes:
+      label: Name (Abbreviation) of the unit you want to create?
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: What is its base SI unit?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Would you like to provide more information about your unit?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contributing
+    attributes:
+      label: Contributor Guide
+      description: This project has a guide for contributors. First time contributors should read this.
+      options:
+        - label: I will comply with the [Contributor Guide](../../CONTRIBUTING.md)
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: This project has a Code of Conduct that all participants are expected to understand and follow.
+      options:
+        - label: I have read and agree to the project's [Code of Conduct](../../CODE_OF_CONDUCT.md)
+          required: true
