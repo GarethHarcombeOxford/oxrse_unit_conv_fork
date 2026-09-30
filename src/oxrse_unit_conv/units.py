@@ -21,6 +21,7 @@ meter_sq = Unit(name='meter_sq', abbr='m2', si=meter, to_si_fun=lambda n: n * n,
 m2 = meter_sq
 
 # meter_cu
+litres = Unit(name='litres', abbr='l', si=meter_cu, to_si_fun = lambda n: n / 1000)
 
 # kilogram
 
