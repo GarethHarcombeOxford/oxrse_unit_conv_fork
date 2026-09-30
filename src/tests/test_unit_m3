@@ -1,0 +1,14 @@
+import unittest
+from oxrse_unit_conv.units import litres, meter_cu
+
+
+class TestKilometer(unittest.TestCase):
+    def test_SI(self):
+        self.assertTrue(litres.si_unit.matches(meter_cu))
+
+    def test_basic_conversion(self):
+        self.assertEqual(litres.to_si(1), 0.001)
+        self.assertEqual(litres.to_unit(1, litres), 1)
+
+if __name__ == '__main__':
+    unittest.main()
